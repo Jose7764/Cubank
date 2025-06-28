@@ -1,0 +1,332 @@
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: Arial, sans-serif;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    #fundoSite {
+        background-image: url('/fundo.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    #Container-prinsipal {}
+    
+    a {
+        text-decoration: none;
+    }
+    
+    #header-container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+        height: 3rem;
+        background: rgba(0, 0, 0, 0.726);
+        color: white;
+    }
+    
+    .titulo {
+        margin-top: 6px;
+        font-size: 35px;
+    }
+    
+    #conteiner-salario {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 4rem;
+        color: rgb(255, 255, 255);
+        background: rgba(0, 0, 0, 0.726);
+        box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.521) inset;
+        margin-top: 3rem;
+        font-size: 30px;
+    }
+    
+    #conteiner-salario p {
+        padding-right: 1rem;
+        display: flex;
+        align-items: center;
+        font-family: Arial, sans-serif;
+    }
+    
+    #texto_bemvinda p {
+        font-size: 30px;
+    }
+    
+    .navegacao {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 15px;
+        background: rgba(0, 0, 0, 0.726);
+        margin-top: 75%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        z-index: 1000;
+    }
+    
+    label {
+        background: white;
+        color: black;
+        border-radius: 10px;
+        width: 9%;
+        height: 40%;
+        width: 10rem;
+        height: 3rem;
+        font-size: 18px;
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .conteudo {
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.726);
+        margin-top: 2%;
+        color: white;
+        gap: 20px;
+    }
+    
+    .tela {
+        display: none;
+    }
+    
+    #tela_pix:checked~.conteudo .pix,
+    #tela_fatura:checked~.conteudo .fatura,
+    #tela_cartoes:checked~.conteudo .cartoes,
+    #tela_credito:checked~.conteudo .credito {
+        display: block;
+    }
+    
+    @media (max-width: 768px) {
+        label {
+            width: 5rem;
+            height: 3rem;
+            text-align: start;
+        }
+    }
+    
+    .section-title {
+        margin-top: 30px;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    
+    .grid {
+        display: flex;
+        justify-content: start;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .button {
+        background: white;
+        color: black;
+        padding: 15px 25px;
+        border-radius: 10px;
+        width: 10%;
+        height: 40%;
+        cursor: pointer;
+        font-size: 18px;
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s;
+    }
+    
+    .button:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .button span {
+        margin-top: 8px;
+        font-size: 14px;
+    }
+    
+    @media (max-width: 741px) {
+        .button {
+            width: 25%;
+            height: 40%;
+            text-align: center;
+        }
+    }
+    
+    .extrato .item {
+        background: rgba(0, 0, 0, 0.753);
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+    }
+    
+    .extrato {
+        padding: 10px;
+    }
+    
+    .item {
+        background-color: #fff;
+        border-radius: 6px;
+        margin-bottom: 10px;
+        padding: 15px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .data {
+        color: #c9c9c9;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    
+    .descricao {
+        font-size: 16px;
+        margin-bottom: 5px;
+        color: rgb(255, 255, 255);
+    }
+    
+    .valor {
+        font-weight: bold;
+    }
+    
+    .positivo {
+        color: rgb(35, 231, 35);
+    }
+    
+    .negativo {
+        color: red;
+    }
+    
+    .carrossel-container {
+        overflow-x: auto;
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+        scroll-snap-type: x mandatory;
+        background: #f9f9f900;
+    }
+    
+    .cartao {
+        scroll-snap-align: center;
+        flex: 0 0 auto;
+        width: 200px;
+        height: 120px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+    
+    .cartao:hover {
+        transform: scale(1.05);
+    }
+    
+    .nubank {
+        background: linear-gradient(135deg, #8A05BE, #DA00A8);
+    }
+    
+    .cubank {
+        background: linear-gradient(135deg, #6d1b02da, #f8de68);
+    }
+    
+    .inter {
+        background: linear-gradient(135deg, #ff6600da, #f8883dda);
+    }
+    
+    input[type="radio"] {
+        display: none;
+    }
+    
+    .info-cartao {
+        display: none;
+        padding: 1rem;
+        border-top: 1px solid #ddd;
+        background: #ffffff00;
+    }
+    
+    #nubank:checked~.info-nubank,
+    #cubank:checked~.info-cubank,
+    #inter:checked~.info-inter {
+        display: block;
+    }
+    
+    .grafico {
+        position: relative;
+        width: 120px;
+        height: 120px;
+        margin: 0 auto 1rem auto;
+        border-radius: 50%;
+        background: conic-gradient( #4caf50 0% 60%, #f44336 60% 100%);
+    }
+    
+    .grafico::before {
+        content: '';
+        position: absolute;
+        top: 15%;
+        left: 15%;
+        width: 70%;
+        height: 70%;
+        background: #1c1c1c;
+        border-radius: 50%;
+    }
+    
+    .legendas {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+    }
+    
+    .legenda span {
+        display: block;
+        margin-top: 0.3rem;
+        font-size: 0.9rem;
+    }
+    
+    .verde {
+        color: #4caf50;
+    }
+    
+    .vermelho {
+        color: #f44336;
+    }
+    
+    .tipo-pagamento {
+        color: #4caf50;
+    }
+    
+    .tipo-compra {
+        color: #f44336;
+    }
+    
+    .faturas {
+        background: rgba(0, 0, 0, 0.726);
+        border-radius: 10px;
+        padding: 1rem;
+        max-height: 300px;
+        overflow-y: auto;
+    }
+    
+    .historial {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #444;
+        font-size: 0.9rem;
+    }

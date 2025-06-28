@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extrato Bancário</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+        }
+        
+        .saldo {
+            background-color: #fff;
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <style>
+        .painel-cartao {
+            max-width: 400px;
+            margin: auto;
+            background: #1c1c1c;
+            color: #fff;
+            border-radius: 20px;
+            padding: 2rem;
+            font-family: sans-serif;
+        }
+        
+        .saldo {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+        .saldo h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        
+        .grafico {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 1rem auto;
+            border-radius: 50%;
+            background: conic-gradient( #4caf50 0% 60%, #f44336 60% 100%);
+        }
+        
+        .grafico::before {
+            content: '';
+            position: absolute;
+            top: 15%;
+            left: 15%;
+            width: 70%;
+            height: 70%;
+            background: #1c1c1c;
+            border-radius: 50%;
+        }
+        
+        .legendas {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 2rem;
+        }
+        
+        .legenda span {
+            display: block;
+            margin-top: 0.3rem;
+            font-size: 0.9rem;
+        }
+        
+        .verde {
+            color: #4caf50;
+        }
+        
+        .vermelho {
+            color: #f44336;
+        }
+        
+        .faturas {
+            background: #2a2a2a;
+            border-radius: 10px;
+            padding: 1rem;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        
+        .fatura {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #444;
+            font-size: 0.9rem;
+        }
+        
+        .fatura:last-child {
+            border-bottom: none;
+        }
+        
+        .tipo-pagamento {
+            color: #4caf50;
+        }
+        
+        .tipo-compra {
+            color: #f44336;
+        }
+    </style>
+
+    <div class="painel-cartao">
+        <div class="saldo">
+            <p>Saldo disponível</p>
+            <h1>R$ 1.260,50</h1>
+        </div>
+
+        <div class="grafico"></div>
+
+        <div class="legendas">
+            <div class="legenda verde">
+                <strong>R$ 760,50</strong>
+                <span>Disponível</span>
+            </div>
+            <div class="legenda vermelho">
+                <strong>R$ 500,00</strong>
+                <span>Fatura</span>
+            </div>
+        </div>
+
+        <div class="faturas">
+            <div class="fatura"><span>Netflix</span><span class="tipo-compra">- R$ 39,90</span></div>
+            <div class="fatura"><span>Pagamento Fatura</span><span class="tipo-pagamento">+ R$ 300,00</span></div>
+            <div class="fatura"><span>Amazon</span><span class="tipo-compra">- R$ 99,00</span></div>
+            <div class="fatura"><span>Pagamento Fatura</span><span class="tipo-pagamento">+ R$ 200,00</span></div>
+            <div class="fatura"><span>Lanche</span><span class="tipo-compra">- R$ 25,00</span></div>
+            <div class="fatura"><span>Farmácia</span><span class="tipo-compra">- R$ 32,90</span></div>
+            <div class="fatura"><span>Spotify</span><span class="tipo-compra">- R$ 19,90</span></div>
+            <div class="fatura"><span>Pagamento Fatura</span><span class="tipo-pagamento">+ R$ 50,00</span></div>
+            <div class="fatura"><span>Mercado</span><span class="tipo-compra">- R$ 120,00</span></div>
+            <div class="fatura"><span>Uber</span><span class="tipo-compra">- R$ 22,00</span></div>
+            <div class="fatura"><span>Pagamento Fatura</span><span class="tipo-pagamento">+ R$ 100,00</span></div>
+            <div class="fatura"><span>Cinema</span><span class="tipo-compra">- R$ 30,00</span></div>
+            <div class="fatura"><span>Farmácia</span><span class="tipo-compra">- R$ 15,90</span></div>
+            <div class="fatura"><span>Pagamento Fatura</span><span class="tipo-pagamento">+ R$ 70,00</span></div>
+            <div class="fatura"><span>Lanche</span><span class="tipo-compra">- R$ 12,00</span></div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

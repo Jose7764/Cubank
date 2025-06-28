@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubank</title>
+    <link rel="stylesheet" href="/Style.css">
+</head>
+
+<body>
+    <div id="fundoSite">
+        <div id="header-container">
+            <img src="/BotaoHamburguer.png" alt="Botão menu">
+            <a href="/index.html" class="titulo">Cubank</a>
+            <img href = "index.html" src="/LOGO.png" alt="Cubanco">
+        </div>
+
+        <div id="Container-prinsipal">
+            <div id="conteiner-salario">
+                <p> - Saldo Atual:</p>
+                <p>R$ 20.490,00</p>
+            </div>
+
+            <input type="radio" name="tela" id="tela_pix">
+            <input type="radio" name="tela" id="tela_fatura">
+            <input type="radio" name="tela" id="tela_cartoes">
+            <input type="radio" name="tela" id="tela_credito">
+
+            <div class="navegacao">
+                <label for="tela_pix">PIX</label>
+                <label for="tela_fatura">Extrato</label>
+                <label for="tela_cartoes">Cartões</label>
+                <label for="tela_credito">Crédito</label>
+            </div>
+
+            <div class="conteudo">
+
+
+                <div class="tela pix">
+                    <h1>Envie ou receba com PIX</h1>
+                    <h2>Área Pix</h2>
+                    <p>Envie e receba pagamentos a qualquer hora e dia da semana, sem pagar nada por isso.</p>
+
+                    <div class="section-title">Enviar</div>
+                    <div class="grid">
+                        <a href="transferir.html" class="button">
+                            💸
+                            <span>Transferir</span>
+                        </a>
+                        <a href="copiar.html" class="button">
+                            📋
+                            <span>Pix Copia e Cola</span>
+                        </a>
+
+                    </div>
+
+                    <div class="section-title">Receber</div>
+                    <div class="grid">
+                        <a href="cobrar.html" class="button">
+                            🧾
+                            <span>Cobrar</span>
+                            </a>
+                        <a href="depositar.html" class="button">
+                            💰
+                            <span>Depositar</span>
+                            </a>
+                    </div>
+
+                </div>
+
+
+                <div class="tela fatura">
+
+                    <div class="extrato">
+
+                        <div class="item">
+                            <div class="data">Hoje - 14:21</div>
+                            <div class="descricao">Transferência entre contas PagBank</div>
+                            <div class="valor negativo">- R$ 20,00</div>
+                        </div>
+
+                        <div class="item">
+                            <div class="data">Hoje - 14:17</div>
+                            <div class="descricao">Transferência entre contas PagBank</div>
+                            <div class="valor positivo">+ R$ 15,00</div>
+                        </div>
+
+                        <div class="item">
+                            <div class="data">17 SET - 7:19</div>
+                            <div class="descricao">Rendimento da conta</div>
+                            <div class="valor positivo">+ R$ 2,18</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tela cartoes">
+
+
+                    <input type="radio" name="cartao" id="nubank" checked>
+                    <input type="radio" name="cartao" id="cubank">
+                    <input type="radio" name="cartao" id="inter">
+
+
+                    <div class="carrossel-container">
+                        <label for="nubank" class="cartao nubank">Nubank</label>
+                        <label for="cubank" class="cartao cubank">Cubank</label>
+                        <label for="inter" class="cartao inter">Inter</label>
+                    </div>
+
+
+                    <div class="info-cartao info-nubank">
+                        <h3>Cartão Nubank</h3>
+                        <p>Limite: R$ 5.000</p>
+                        <p>Fatura atual: R$ 1.200</p>
+                    </div>
+
+                    <div class="info-cartao info-cubank">
+                        <h3>Cartão Cubank</h3>
+                        <p>Limite: R$ 3.000</p>
+                        <p>Fatura atual: R$ 600</p>
+                    </div>
+
+                    <div class="info-cartao info-inter">
+                        <h3>Cartão Inter</h3>
+                        <p>Limite: R$ 7.500</p>
+                        <p>Fatura atual: R$ 2.300</p>
+
+                    </div>
+                </div>
+
+                <div class="tela credito">
+                    <div class="grafico"></div>
+
+                    <div class="legendas">
+                        <div class="legenda verde">
+                            <strong>R$ 760,50</strong>
+                            <span>Disponível</span>
+                        </div>
+                        <div class="legenda vermelho">
+                            <strong>R$ 500,00</strong>
+                            <span>Fatura</span>
+                        </div>
+                    </div>
+
+                    <div class="faturas">
+                        <div class="historial"><span>Netflix</span><span class="tipo-compra">- R$ 39,90</span></div>
+                        <div class="historial"><span>Pagamento Fatura</span><span class="tipo-pagamento">+ R$ 300,00</span></div>
+                        <div class="historial"><span>Amazon</span><span class="tipo-compra">- R$ 99,00</span></div>
+                        <div class="historial"><span>Pagamento Fatura</span><span class="tipo-pagamento">+ R$ 200,00</span></div>
+                        <div class="historial"><span>Lanche</span><span class="tipo-compra">- R$ 25,00</span></div>
+                        <div class="historial"><span>Farmácia</span><span class="tipo-compra">- R$ 32,90</span></div>
+                        <div class="historial"><span>Spotify</span><span class="tipo-compra">- R$ 19,90</span></div>
+                        <div class="historial"><span>Pagamento Fatura</span><span class="tipo-pagamento">+ R$ 50,00</span></div>
+                        <div class="historial"><span>Mercado</span><span class="tipo-compra">- R$ 120,00</span></div>
+                        <div class="historial"><span>Uber</span><span class="tipo-compra">- R$ 22,00</span></div>
+                        <div class="historial"><span>Pagamento Fatura</span><span class="tipo-pagamento">+ R$ 100,00</span></div>
+                        <div class="historial"><span>Cinema</span><span class="tipo-compra">- R$ 30,00</span></div>
+                        <div class="historial"><span>Farmácia</span><span class="tipo-compra">- R$ 15,90</span></div>
+                        <div class="historial"><span>Pagamento Fatura</span><span class="tipo-pagamento">+ R$ 70,00</span></div>
+                        <div class="historial"><span>Lanche</span><span class="tipo-compra">- R$ 12,00</span></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
